@@ -29,46 +29,113 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-					<a href="https://revealjs.com">
-						<img src="https://static.slid.es/reveal/logo-v1/reveal-white-text.svg" alt="reveal.js logo" style="height: 180px; margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
-					</a>
-					<h3>The HTML Presentation Framework</h3>
+					<h3>VIM的常用命令和插件</h3>
 					<p>
-						<small>Created by <a href="http://hakim.se">Hakim El Hattab</a> and <a href="https://github.com/hakimel/reveal.js/graphs/contributors">contributors</a></small>
+						<small>Created by <a href="https://github.com/zw8677174">zongwen</a></small>
 					</p>
 				</section>
 
-				<section>
-					<h2>Hello There</h2>
-					<p>
-						reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will show you examples of what it can do.
-					</p>
+                <section>
+                    <section>
+                        <h2>plugin manager</h2>
+                    </section>
+                    <section>
+                        <p>vim-plug</p> 
+                        <a href="https://github.com/junegunn/vim-plug">https://github.com/junegunn/vim-plug</a>
+                        <p>Vundle.vim</p>
+                        <a href="https://github.com/junegunn/vim-plug">https://github.com/junegunn/vim-plug</a>
+                    </section>
+                </section>
+				<section data-auto-animate>
+                    <h2 data-id="code-title">.VIMRC</h2>
+                    <pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+call plug#begin('~/.vim/plugged')
+    Plug 'tpope/vim-sensible'
+    Plug 'mhinz/vim-startify'
+    Plug 'junegunn/vim-easy-align'
+    Plug 'Konfekt/FastFold'
+    Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+    Plug 'posva/vim-vue'
+    Plug 'vim-airline/vim-airline'
+    Plug 'altercation/vim-colors-solarized'
+    Plug 'tpope/vim-surround'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py' }
+    Plug 'junegunn/fzf.vim'
+    Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+    Plug 'artur-shaik/vim-javacomplete2'
+    Plug 'airblade/vim-rooter'
+    Plug 'Yggdroot/indentLine'
+    Plug 'vim-scripts/mru.vim'
+    Plug 'Chiel92/vim-autoformat'
+    Plug 'junegunn/goyo.vim'
+    Plug 'davidhalter/jedi-vim'
+call plug#end()
+                    </code></pre>
 				</section>
 
-				<!-- Example of nested vertical slides -->
-				<section>
-					<section>
-						<h2>Vertical Slides</h2>
-						<p>Slides can be nested inside of each other.</p>
-						<p>Use the <em>Space</em> key to navigate through all slides.</p>
-						<br>
-						<a href="#/2/1" class="navigate-down">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-						</a>
-					</section>
-					<section>
-						<h2>Basement Level 1</h2>
-						<p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-					</section>
-					<section>
-						<h2>Basement Level 2</h2>
-						<p>That's it, time to go back up.</p>
-						<br>
-						<a href="#/2">
-							<img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);" width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
-						</a>
-					</section>
-				</section>
+                <section>
+                    <section>
+                        <h2>plugins</h2>
+                    </section>
+                    <section>
+                        <h3>界面优化<h3>
+                                <ul>
+                                    <li><a href="https://github.com/altercation/vim-colors-solarized">vim-colors-solarized</a></li> 
+                                    <li><a href="https://github.com/vim-airline/vim-airline">vim-airline</a></li> 
+                                    <li><a href="https://github.com/altercation/vim-colors-solarized">vim-startify</a></li> 
+                                </ul>
+                    </section>
+                    <section>
+                        <h3>代码补全<h3>
+                                <ul>
+                                    <li><a href="https://github.com/fatih/vim-go">vim-go</a></li> 
+                                    <li><a href="https://github.com/ycm-core/YouCompleteMe">YouCompleteMe</a></li> 
+                                </ul>
+                    </section>
+                    <section>
+                        <h3>功能辅助<h3>
+                                <ul>
+                                    <li><a href="https://github.com/preservim/nerdtree">nerdtree</a></li> 
+                                    <li><a href="https://github.com/junegunn/fzf">fzf</a></li> 
+                                    <li><a href="https://github.com/yegappan/mru">mru</a></li> 
+                                </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>plugins</h2>
+                    </section>
+                    <section>
+                        <h3>界面优化<h3>
+                                <ul>
+                                    <li></li> 
+                                    <li><a href="https://github.com/vim-airline/vim-airline">vim-airline</a></li> 
+                                    <li><a href="https://github.com/altercation/vim-colors-solarized">vim-startify</a></li> 
+                                </ul>
+                    </section>
+                    <section>
+                        <h3>代码补全<h3>
+                                <ul>
+                                    <li><a href="https://github.com/fatih/vim-go">vim-go</a></li> 
+                                    <li><a href="https://github.com/ycm-core/YouCompleteMe">YouCompleteMe</a></li> 
+                                </ul>
+                    </section>
+                    <section>
+                        <h3>功能辅助<h3>
+                                <ul>
+                                    <li><a href="https://github.com/preservim/nerdtree">nerdtree</a></li> 
+                                    <li><a href="https://github.com/junegunn/fzf">fzf</a></li> 
+                                    <li><a href="https://github.com/yegappan/mru">mru</a></li> 
+                                </ul>
+                    </section>
+                </section>
+
+
+                <section>
+                    <h1>thanks</h1>
+                </section>
 
 				<section>
 					<h2>Slides</h2>
